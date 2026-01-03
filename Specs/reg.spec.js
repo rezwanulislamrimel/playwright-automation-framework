@@ -4,7 +4,11 @@ import {Registration} from "../PageObject/Registration/RegAction.js";
 test.describe ("Evershop Ecommerce Registratin Feature", () =>{
 test("successfully register with valid information", async(page) =>{
 const registration =new Registration(page);
-await page.url("https://demo.evershop.io/");
+await page.goto("https://demo.evershop.io/");
+
+// pause to debug
+// await.page.pause();
+
 await registration.clickOnAccountIcon();
 await registration.ClickOnCreateAccountLink();
 await registration.enterFullName("first Test");

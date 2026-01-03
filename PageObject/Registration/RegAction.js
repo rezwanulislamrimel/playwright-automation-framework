@@ -23,6 +23,6 @@ this.locator = new registrationObjects.(page);
         await.this.locator.passwordInput.fill(password);
     }
     async clickOnSignUpButton(){
-        await.this.locator.buttonSignUp.click();
+        await.this.locator.buttonSignUp.click();      
     }
 } 
